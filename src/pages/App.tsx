@@ -24,7 +24,7 @@ function App() {
           <p className="text-5xl font-semibold">Elite Barber Shop</p>
           <p className="text-5xl font-semibold">Guimarães</p>
 
-          <div className="flex w-full">
+          <div className="w-full">
             <div> 
               <div className="mt-4 flex">
                 <CiLocationOn size={20} />
@@ -54,13 +54,13 @@ function App() {
         {/* Imagem */}
         <div className="w-1/2">
           <img
-            className="rounded-3xl w-125 h-110 shadow-lg"
-            src="https://corpoeface.com.br/wp-content/uploads/2023/10/barbeiro-curso-online.jpg"
+            className="rounded-3xl w-150 h-110 shadow-lg object-cover"
+            src="/assets/images/barbermain.png"
           />
         </div>
       </div>
 
-      <div className="flex space-x-30 mt-10 ml-30 ">
+      <div className="flex items-center justify-center space-x-40 mt-10">
         {services.map((service) => (
           <div key={service.id} className="flex flex-col items-center justify-center">
             {service.icon}
@@ -79,7 +79,7 @@ function App() {
           <div className="relative h-full w-1/2">
             <p className="text-4xl text-white font-bold">Por que escolher-nos?</p>
             <p className="text-xl text-white font-semibold">Além disso, aqui estão 5 razões pelas quais os homens preferem a Elite Barber Shop Guimarães:</p>
-            <ul className="text-white list-disc ml-10 mt-2 space-y-5">
+            <ul className="text-white text-lg list-disc ml-5 mt-2 space-y-5">
               <li>Ambiente sempre acolhedor e confortável.</li>
               <li>Os nossos profissionais são especialistas e focam-se na máxima qualidade.</li>
               <li>Valorizamos o tempo e o investimento dos nossos clientes.</li>
@@ -88,9 +88,52 @@ function App() {
             </ul>
           </div>
 
-          <div className="w-110 h-120 relative bg-white ml-20 rounded-2xl">
-            <p className="text-4xl ">Horários</p>
+          <div className="w-110 h-130 relative bg-white ml-20 rounded-2xl flex flex-col items-center">
+            <p className="text-[#B5AF93] text-4xl font-bold p-10">Horários</p>
+            <ul className="space-y-2 font-serif">
+              <li className="text-2xl"> Segunda: 09:00 - 20:00</li>
+              <li className="text-2xl"> Terça: 09:00 - 20:00</li>
+              <li className="text-2xl"> Quarta: 09:00 - 20:00</li>
+              <li className="text-2xl"> Quinta: 09:00 - 20:00</li>
+              <li className="text-2xl"> Sexta: 09:00 - 20:00</li>
+              <li className="text-2xl"> Sabado: 09:00 - 19:00</li>
+              <li className="text-2xl"> Domingo: Fechado</li>
+            </ul>
+              <div className="mt-8">
+                <a
+                  href="https://buk.pt/elite-barbershop"
+                  className="font-bold w-40 h-12 shadow-sm rounded-xl border border-black flex items-center justify-center"
+                >
+                  Marcar
+                </a>
+              </div>
           </div>
+        </div>
+      </div>
+      <div className="relative min-h-screen bg-[url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.webp')] bg-cover bg-center flex ">
+        {/* Contêiner da Imagem */}
+          <div className="relative pt-20 pl-60">
+              <img className="h-120 w-120 rounded-full object-cover" src="https://images.fresha.com/lead-images/placeholders/barbershop-11.jpg?class=venue-gallery-large&dpr=2" />
+              
+              {/* Caixa sobre a Imagem */}
+              <div className="absolute p-8 top-2/5 left-3/4 bg-gray-300 w-130 h-90 rounded-4xl shadow-lg flex flex-col items-center">
+                <p className="text-4xl font-bold">Elite Barber Shop</p>
+                <p className="mt-4">Oferecemos mais do que um corte de cabelo ou barba: proporcionamos uma experiência de qualidade, conforto e confiança.
+                  <p>Com profissionalismo e atenção aos detalhes, os nossos barbeiros garantem um serviço personalizado que supera expectativas.</p>  
+                  Aqui, cuidas da tua imagem num ambiente onde qualidade e bem-estar se unem. </p>
+              </div>
+          </div>
+      </div>
+
+      <div className="min-h-screen flex">
+        <div className="w-1/2 h-screen">
+          <img className="h-full object-cover blur-xs" src="https://images.fresha.com/lead-images/placeholders/barbershop-110.jpg?class=venue-gallery-large&dpr=2"></img>
+        </div>
+
+        <div className="flex flex-col items-center w-1/2 bg-[#292D33] text-white"> 
+          <p className="text-5xl text-white mt-6">Contacte-nos!</p>
+          <label>Nome:</label>
+          <input type="text" placeholder="Digite seu nome"></input>
         </div>
       </div>
 
