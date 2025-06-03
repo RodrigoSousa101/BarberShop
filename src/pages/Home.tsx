@@ -3,6 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { ImScissors } from "react-icons/im";
 import { GiBeard } from "react-icons/gi";
+import Contactus from "../components/contactus";
 
 function App() {
 
@@ -118,20 +119,26 @@ function App() {
               {/* Caixa sobre a Imagem */}
               <div className="absolute p-8 top-2/5 left-3/4 bg-gray-300 w-130 h-90 rounded-4xl shadow-lg flex flex-col items-center">
                 <p className="text-4xl font-bold">Elite Barber Shop</p>
-                <p className="mt-4">Oferecemos mais do que um corte de cabelo ou barba: proporcionamos uma experiência de qualidade, conforto e confiança.
-                  <p>Com profissionalismo e atenção aos detalhes, os nossos barbeiros garantem um serviço personalizado que supera expectativas.</p>  
-                  Aqui, cuidas da tua imagem num ambiente onde qualidade e bem-estar se unem. </p>
+                <p className="mt-4">
+                  Oferecemos mais do que um corte de cabelo ou barba: proporcionamos uma experiência de qualidade, conforto e confiança.
+                </p>
+                <p>
+                  Com profissionalismo e atenção aos detalhes, os nossos barbeiros garantem um serviço personalizado que supera expectativas.
+                </p>
+                <p>
+                  Aqui, cuidas da tua imagem num ambiente onde qualidade e bem-estar se unem.
+                </p>
               </div>
           </div>
       </div>
 
-
+    <Contactus />
 
     </div>
   );
 }
 
-export default App; 
+export default App;
 
 
 
