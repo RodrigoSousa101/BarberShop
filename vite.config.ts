@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // substitui 'elite-barber-shop' pelo nome real do teu repositório no GitHub, se for diferente
 export default defineConfig({
-  base: '/elite-barber-shop/',
+  base: '/Projects/',
   plugins: [
     tailwindcss(),
     react()
