@@ -2,8 +2,6 @@ import Navbar from "../components/navbar";
 import { useEffect } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { ImScissors } from "react-icons/im";
-import { GiBeard } from "react-icons/gi";
 import Contactus from "../components/contactus";
 import AOS from "aos";
 import "aos/dist/aos.css";

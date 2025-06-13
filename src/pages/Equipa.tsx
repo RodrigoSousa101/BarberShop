@@ -11,7 +11,7 @@ function Equipa() {
     AOS.init({ duration: 700, once: false });
   }, []);
 
-  const { barbeiros, addBarbeiro, addBarbeiros } = useBarbeiros();
+  const { barbeiros,  addBarbeiros } = useBarbeiros();
 
   // Adiciona os barbeiros iniciais só se ainda não existirem
   useEffect(() => {
