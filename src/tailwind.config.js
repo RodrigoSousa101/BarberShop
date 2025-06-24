@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        header: ['Poppins', 'sans-serif'],
+        text: ['Inter', 'sans-serif'],
       },
       colors: {
         gold: '#9D9570', // agora podes usar text-gold
